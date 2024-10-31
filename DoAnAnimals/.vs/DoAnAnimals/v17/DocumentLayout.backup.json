@@ -1,0 +1,276 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|d:\\dev web huflit\\doan\\doananimals\\doananimals\\areas\\admin\\views\\animals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\views\\animals\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\models\\doan.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\models\\doan.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\controllers\\animalscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\views\\animals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\views\\animals\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\views\\animals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\views\\animals\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\views\\animals\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\views\\animals\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\views\\animals\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\views\\animals\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\controllers\\regionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\controllers\\conservationstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\controllers\\conservationstatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\controllers\\habitatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\controllers\\habitatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\controllers\\dietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\controllers\\dietscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\models\\diet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\models\\diet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\models\\region.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\controllers\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\controllers\\adminhomecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\views\\shared\\adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\doananimals\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{219541CC-5B04-4C66-B8CB-58D5CBB484C9}|DoAnAnimals\\DoAnAnimals.csproj|solutionrelative:doananimals\\areas\\admin\\adminarearegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 310,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Create.cshtml",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Create.cshtml",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Create.cshtml",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Create.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T15:37:24.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Delete.cshtml",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Delete.cshtml",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Delete.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T15:37:11.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Details.cshtml",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Details.cshtml",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Details.cshtml",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Details.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T15:36:04.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Edit.cshtml",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Edit.cshtml",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Edit.cshtml",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Edit.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T15:35:34.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegionsController.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\RegionsController.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Controllers\\RegionsController.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\RegionsController.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Controllers\\RegionsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:23:27.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConservationStatusController.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\ConservationStatusController.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Controllers\\ConservationStatusController.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\ConservationStatusController.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Controllers\\ConservationStatusController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:23:08.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HabitatsController.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\HabitatsController.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Controllers\\HabitatsController.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\HabitatsController.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Controllers\\HabitatsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:21:47.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DietsController.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\DietsController.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Controllers\\DietsController.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\DietsController.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Controllers\\DietsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:12:52.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Diet.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\Diet.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Models\\Diet.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\Diet.cs",
+              "RelativeToolTip": "DoAnAnimals\\Models\\Diet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T15:06:40.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Index.cshtml",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Index.cshtml",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Animals\\Index.cshtml",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Views\\Animals\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T14:55:42.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AnimalsController.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\AnimalsController.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Controllers\\AnimalsController.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\AnimalsController.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Controllers\\AnimalsController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwDoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:55:20.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Region.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\Region.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Models\\Region.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\Region.cs",
+              "RelativeToolTip": "DoAnAnimals\\Models\\Region.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:54:13.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "adminLayout.cshtml",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-31T14:49:54.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "adminHomeController.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\adminHomeController.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\Controllers\\adminHomeController.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\Controllers\\adminHomeController.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\Controllers\\adminHomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:48:22.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "adminAreaRegistration.cs",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\adminAreaRegistration.cs",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Areas\\admin\\adminAreaRegistration.cs",
+              "ToolTip": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Areas\\admin\\adminAreaRegistration.cs",
+              "RelativeToolTip": "DoAnAnimals\\Areas\\admin\\adminAreaRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T14:46:22.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DoAn.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Dev Web Huflit\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\DoAn.edmx",
+              "RelativeDocumentMoniker": "DoAnAnimals\\Models\\DoAn.edmx",
+              "ToolTip": "D:\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\DoAn.edmx [Diagram1]",
+              "RelativeToolTip": "..\\..\\..\\DOAN\\DoAnAnimals\\DoAnAnimals\\Models\\DoAn.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-10-31T14:35:42.907Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

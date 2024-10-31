@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DoAnModel1StoreContainer" CdmEntityContainer="DoAnEntities1">
+    <EntitySetMapping Name="Animals">
+      <EntityTypeMapping TypeName="DoAnModel1.Animal">
+        <MappingFragment StoreEntitySet="Animals">
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Image_URL" ColumnName="Image_URL" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Lifespan" ColumnName="Lifespan" />
+          <ScalarProperty Name="Diet" ColumnName="Diet" />
+          <ScalarProperty Name="Conservation_Status" ColumnName="Conservation_Status" />
+          <ScalarProperty Name="Habitat_ID" ColumnName="Habitat_ID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Articles">
+      <EntityTypeMapping TypeName="DoAnModel1.Article">
+        <MappingFragment StoreEntitySet="Articles">
+          <ScalarProperty Name="Animal_ID" ColumnName="Animal_ID" />
+          <ScalarProperty Name="Date_Published" ColumnName="Date_Published" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Article_ID" ColumnName="Article_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="DoAnModel1.Comment">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="Date_Posted" ColumnName="Date_Posted" />
+          <ScalarProperty Name="Comment_Text" ColumnName="Comment_Text" />
+          <ScalarProperty Name="Animal_ID" ColumnName="Animal_ID" />
+          <ScalarProperty Name="User_ID" ColumnName="User_ID" />
+          <ScalarProperty Name="Comment_ID" ColumnName="Comment_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConservationStatus">
+      <EntityTypeMapping TypeName="DoAnModel1.ConservationStatu">
+        <MappingFragment StoreEntitySet="ConservationStatus">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Status_Name" ColumnName="Status_Name" />
+          <ScalarProperty Name="Status_ID" ColumnName="Status_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diets">
+      <EntityTypeMapping TypeName="DoAnModel1.Diet">
+        <MappingFragment StoreEntitySet="Diet">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Diet_Type" ColumnName="Diet_Type" />
+          <ScalarProperty Name="Diet_ID" ColumnName="Diet_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Habitats">
+      <EntityTypeMapping TypeName="DoAnModel1.Habitat">
+        <MappingFragment StoreEntitySet="Habitat">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Habitat_Type" ColumnName="Habitat_Type" />
+          <ScalarProperty Name="Habitat_ID" ColumnName="Habitat_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="DoAnModel1.Region">
+        <MappingFragment StoreEntitySet="Regions">
+          <ScalarProperty Name="Climate" ColumnName="Climate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Region_Name" ColumnName="Region_Name" />
+          <ScalarProperty Name="Region_ID" ColumnName="Region_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DoAnModel1.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

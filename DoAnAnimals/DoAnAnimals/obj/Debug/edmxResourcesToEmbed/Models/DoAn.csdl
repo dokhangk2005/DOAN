@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DoAnModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="DoAnEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Animals" EntityType="DoAnModel1.Animal" />
+    <EntitySet Name="Articles" EntityType="DoAnModel1.Article" />
+    <EntitySet Name="Comments" EntityType="DoAnModel1.Comment" />
+    <EntitySet Name="ConservationStatus" EntityType="DoAnModel1.ConservationStatu" />
+    <EntitySet Name="Diets" EntityType="DoAnModel1.Diet" />
+    <EntitySet Name="Habitats" EntityType="DoAnModel1.Habitat" />
+    <EntitySet Name="Regions" EntityType="DoAnModel1.Region" />
+    <EntitySet Name="sysdiagrams" EntityType="DoAnModel1.sysdiagram" />
+    <AssociationSet Name="FK__Animals__Conserv__49C3F6B7" Association="DoAnModel1.FK__Animals__Conserv__49C3F6B7">
+      <End Role="ConservationStatu" EntitySet="ConservationStatus" />
+      <End Role="Animal" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Animals__Diet__4AB81AF0" Association="DoAnModel1.FK__Animals__Diet__4AB81AF0">
+      <End Role="Diet" EntitySet="Diets" />
+      <End Role="Animal" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Animals__Habitat__4CA06362" Association="DoAnModel1.FK__Animals__Habitat__4CA06362">
+      <End Role="Habitat" EntitySet="Habitats" />
+      <End Role="Animal" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Animals__Region__4BAC3F29" Association="DoAnModel1.FK__Animals__Region__4BAC3F29">
+      <End Role="Region" EntitySet="Regions" />
+      <End Role="Animal" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Articles__Animal__52593CB8" Association="DoAnModel1.FK__Articles__Animal__52593CB8">
+      <End Role="Animal" EntitySet="Animals" />
+      <End Role="Article" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comments__Animal__4F7CD00D" Association="DoAnModel1.FK__Comments__Animal__4F7CD00D">
+      <End Role="Animal" EntitySet="Animals" />
+      <End Role="Comment" EntitySet="Comments" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Animal">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Habitat_ID" Type="Int32" />
+    <Property Name="Conservation_Status" Type="Int32" />
+    <Property Name="Diet" Type="Int32" />
+    <Property Name="Lifespan" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Size" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Image_URL" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Region" Type="Int32" />
+    <NavigationProperty Name="ConservationStatu" Relationship="DoAnModel1.FK__Animals__Conserv__49C3F6B7" FromRole="Animal" ToRole="ConservationStatu" />
+    <NavigationProperty Name="Diet1" Relationship="DoAnModel1.FK__Animals__Diet__4AB81AF0" FromRole="Animal" ToRole="Diet" />
+    <NavigationProperty Name="Habitat" Relationship="DoAnModel1.FK__Animals__Habitat__4CA06362" FromRole="Animal" ToRole="Habitat" />
+    <NavigationProperty Name="Region1" Relationship="DoAnModel1.FK__Animals__Region__4BAC3F29" FromRole="Animal" ToRole="Region" />
+    <NavigationProperty Name="Articles" Relationship="DoAnModel1.FK__Articles__Animal__52593CB8" FromRole="Animal" ToRole="Article" />
+    <NavigationProperty Name="Comments" Relationship="DoAnModel1.FK__Comments__Animal__4F7CD00D" FromRole="Animal" ToRole="Comment" />
+  </EntityType>
+  <EntityType Name="Article">
+    <Key>
+      <PropertyRef Name="Article_ID" />
+    </Key>
+    <Property Name="Article_ID" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Content" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Date_Published" Type="DateTime" Precision="3" />
+    <Property Name="Animal_ID" Type="Int32" />
+    <NavigationProperty Name="Animal" Relationship="DoAnModel1.FK__Articles__Animal__52593CB8" FromRole="Article" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="Comment">
+    <Key>
+      <PropertyRef Name="Comment_ID" />
+    </Key>
+    <Property Name="Comment_ID" Type="Int32" Nullable="false" />
+    <Property Name="User_ID" Type="Int32" />
+    <Property Name="Animal_ID" Type="Int32" />
+    <Property Name="Comment_Text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Date_Posted" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Animal" Relationship="DoAnModel1.FK__Comments__Animal__4F7CD00D" FromRole="Comment" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="ConservationStatu">
+    <Key>
+      <PropertyRef Name="Status_ID" />
+    </Key>
+    <Property Name="Status_ID" Type="Int32" Nullable="false" />
+    <Property Name="Status_Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Animals" Relationship="DoAnModel1.FK__Animals__Conserv__49C3F6B7" FromRole="ConservationStatu" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="Diet">
+    <Key>
+      <PropertyRef Name="Diet_ID" />
+    </Key>
+    <Property Name="Diet_ID" Type="Int32" Nullable="false" />
+    <Property Name="Diet_Type" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Animals" Relationship="DoAnModel1.FK__Animals__Diet__4AB81AF0" FromRole="Diet" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="Habitat">
+    <Key>
+      <PropertyRef Name="Habitat_ID" />
+    </Key>
+    <Property Name="Habitat_ID" Type="Int32" Nullable="false" />
+    <Property Name="Habitat_Type" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Animals" Relationship="DoAnModel1.FK__Animals__Habitat__4CA06362" FromRole="Habitat" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="Region_ID" />
+    </Key>
+    <Property Name="Region_ID" Type="Int32" Nullable="false" />
+    <Property Name="Region_Name" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Climate" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Animals" Relationship="DoAnModel1.FK__Animals__Region__4BAC3F29" FromRole="Region" ToRole="Animal" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__Animals__Conserv__49C3F6B7">
+    <End Type="DoAnModel1.ConservationStatu" Role="ConservationStatu" Multiplicity="0..1" />
+    <End Type="DoAnModel1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConservationStatu">
+        <PropertyRef Name="Status_ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="Conservation_Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Animals__Diet__4AB81AF0">
+    <End Type="DoAnModel1.Diet" Role="Diet" Multiplicity="0..1" />
+    <End Type="DoAnModel1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Diet">
+        <PropertyRef Name="Diet_ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="Diet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Animals__Habitat__4CA06362">
+    <End Type="DoAnModel1.Habitat" Role="Habitat" Multiplicity="0..1" />
+    <End Type="DoAnModel1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Habitat">
+        <PropertyRef Name="Habitat_ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="Habitat_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Animals__Region__4BAC3F29">
+    <End Type="DoAnModel1.Region" Role="Region" Multiplicity="0..1" />
+    <End Type="DoAnModel1.Animal" Role="Animal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="Region_ID" />
+      </Principal>
+      <Dependent Role="Animal">
+        <PropertyRef Name="Region" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Articles__Animal__52593CB8">
+    <End Type="DoAnModel1.Animal" Role="Animal" Multiplicity="0..1" />
+    <End Type="DoAnModel1.Article" Role="Article" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Article">
+        <PropertyRef Name="Animal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comments__Animal__4F7CD00D">
+    <End Type="DoAnModel1.Animal" Role="Animal" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="DoAnModel1.Comment" Role="Comment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comment">
+        <PropertyRef Name="Animal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DoAnModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Animals">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="255" />
+    <Property Name="Habitat_ID" Type="int" />
+    <Property Name="Conservation_Status" Type="int" />
+    <Property Name="Diet" Type="int" />
+    <Property Name="Lifespan" Type="nvarchar" MaxLength="255" />
+    <Property Name="Size" Type="nvarchar" MaxLength="255" />
+    <Property Name="Image_URL" Type="nvarchar" MaxLength="255" />
+    <Property Name="Region" Type="int" />
+  </EntityType>
+  <EntityType Name="Articles">
+    <Key>
+      <PropertyRef Name="Article_ID" />
+    </Key>
+    <Property Name="Article_ID" Type="int" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Content" Type="nvarchar" MaxLength="255" />
+    <Property Name="Author" Type="nvarchar" MaxLength="255" />
+    <Property Name="Date_Published" Type="datetime" />
+    <Property Name="Animal_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="Comment_ID" />
+    </Key>
+    <Property Name="Comment_ID" Type="int" Nullable="false" />
+    <Property Name="User_ID" Type="int" />
+    <Property Name="Animal_ID" Type="int" />
+    <Property Name="Comment_Text" Type="nvarchar" MaxLength="255" />
+    <Property Name="Date_Posted" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ConservationStatus">
+    <Key>
+      <PropertyRef Name="Status_ID" />
+    </Key>
+    <Property Name="Status_ID" Type="int" Nullable="false" />
+    <Property Name="Status_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Diet">
+    <Key>
+      <PropertyRef Name="Diet_ID" />
+    </Key>
+    <Property Name="Diet_ID" Type="int" Nullable="false" />
+    <Property Name="Diet_Type" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Habitat">
+    <Key>
+      <PropertyRef Name="Habitat_ID" />
+    </Key>
+    <Property Name="Habitat_ID" Type="int" Nullable="false" />
+    <Property Name="Habitat_Type" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="Region_ID" />
+    </Key>
+    <Property Name="Region_ID" Type="int" Nullable="false" />
+    <Property Name="Region_Name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="Climate" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__Animals__Conserv__49C3F6B7">
+    <End Role="ConservationStatus" Type="Self.ConservationStatus" Multiplicity="0..1" />
+    <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConservationStatus">
+        <PropertyRef Name="Status_ID" />
+      </Principal>
+      <Dependent Role="Animals">
+        <PropertyRef Name="Conservation_Status" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Animals__Diet__4AB81AF0">
+    <End Role="Diet" Type="Self.Diet" Multiplicity="0..1" />
+    <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Diet">
+        <PropertyRef Name="Diet_ID" />
+      </Principal>
+      <Dependent Role="Animals">
+        <PropertyRef Name="Diet" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Animals__Habitat__4CA06362">
+    <End Role="Habitat" Type="Self.Habitat" Multiplicity="0..1" />
+    <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Habitat">
+        <PropertyRef Name="Habitat_ID" />
+      </Principal>
+      <Dependent Role="Animals">
+        <PropertyRef Name="Habitat_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Animals__Region__4BAC3F29">
+    <End Role="Regions" Type="Self.Regions" Multiplicity="0..1" />
+    <End Role="Animals" Type="Self.Animals" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="Region_ID" />
+      </Principal>
+      <Dependent Role="Animals">
+        <PropertyRef Name="Region" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Articles__Animal__52593CB8">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="0..1" />
+    <End Role="Articles" Type="Self.Articles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Articles">
+        <PropertyRef Name="Animal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comments__Animal__4F7CD00D">
+    <End Role="Animals" Type="Self.Animals" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Comments" Type="Self.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animals">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="Animal_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DoAnModel1StoreContainer">
+    <EntitySet Name="Animals" EntityType="Self.Animals" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Articles" EntityType="Self.Articles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comments" EntityType="Self.Comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConservationStatus" EntityType="Self.ConservationStatus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Diet" EntityType="Self.Diet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Habitat" EntityType="Self.Habitat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Regions" EntityType="Self.Regions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Animals__Conserv__49C3F6B7" Association="Self.FK__Animals__Conserv__49C3F6B7">
+      <End Role="ConservationStatus" EntitySet="ConservationStatus" />
+      <End Role="Animals" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Animals__Diet__4AB81AF0" Association="Self.FK__Animals__Diet__4AB81AF0">
+      <End Role="Diet" EntitySet="Diet" />
+      <End Role="Animals" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Animals__Habitat__4CA06362" Association="Self.FK__Animals__Habitat__4CA06362">
+      <End Role="Habitat" EntitySet="Habitat" />
+      <End Role="Animals" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Animals__Region__4BAC3F29" Association="Self.FK__Animals__Region__4BAC3F29">
+      <End Role="Regions" EntitySet="Regions" />
+      <End Role="Animals" EntitySet="Animals" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Articles__Animal__52593CB8" Association="Self.FK__Articles__Animal__52593CB8">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="Articles" EntitySet="Articles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comments__Animal__4F7CD00D" Association="Self.FK__Comments__Animal__4F7CD00D">
+      <End Role="Animals" EntitySet="Animals" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

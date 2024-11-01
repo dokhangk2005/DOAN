@@ -11,42 +11,42 @@ USE DoAn;
 CREATE TABLE ConservationStatus (
     Status_ID INT PRIMARY KEY,
     Status_Name VARCHAR(255) NOT NULL,
-    Description TEXT
+    Description NVARCHAR(100)
 );
 
 -- Bảng Diet (Chế độ ăn)
 CREATE TABLE Diet (
     Diet_ID INT PRIMARY KEY,
     Diet_Type NVARCHAR(255) NOT NULL,
-    Description TEXT
+    Description NVARCHAR(50)
 );
 
 -- Bảng Regions (Khu vực)
 CREATE TABLE Regions (
     Region_ID INT PRIMARY KEY,
-    Region_Name VARCHAR(255) NOT NULL,
-    Description TEXT,
-    Climate VARCHAR(255)
+    Region_Name NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(100),
+    Climate NVARCHAR(255)
 );
 
 -- Bảng Habitat (Môi trường sống)
 CREATE TABLE Habitat (
     Habitat_ID INT PRIMARY KEY,
-    Habitat_Type VARCHAR(255) NOT NULL,
-    Description TEXT
+    Habitat_Type NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(100)
 );
 
 -- Bảng Animals (Động vật)
 CREATE TABLE Animals (
     ID INT PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,
-    Description TEXT,
+    Name NVARCHAR(255) NOT NULL,
+    Description NVARCHAR(255),
     Habitat_ID INT,
     Conservation_Status INT,
     Diet INT,
-    Lifespan VARCHAR(50),
-    Size VARCHAR(50),
-    Image_URL VARCHAR(255),
+    Lifespan NVARCHAR(255),
+    Size NVARCHAR(255),
+    Image_URL NVARCHAR(255),
     Region INT,
     FOREIGN KEY (Conservation_Status) REFERENCES ConservationStatus(Status_ID) ON DELETE SET NULL ON UPDATE CASCADE,
     FOREIGN KEY (Diet) REFERENCES Diet(Diet_ID) ON DELETE SET NULL ON UPDATE CASCADE,
@@ -59,7 +59,7 @@ CREATE TABLE Comments (
     Comment_ID INT PRIMARY KEY,
     User_ID INT,
     Animal_ID INT,
-    Comment_Text TEXT,
+    Comment_Text NVARCHAR(255),
     Date_Posted DATETIME,
     FOREIGN KEY (Animal_ID) REFERENCES Animals(ID) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -68,9 +68,9 @@ CREATE TABLE Comments (
 -- Bảng Articles (Bài viết)
 CREATE TABLE Articles (
     Article_ID INT PRIMARY KEY,
-    Title VARCHAR(255) NOT NULL,
-    Content TEXT,
-    Author VARCHAR(255),
+    Title NVARCHAR(255) NOT NULL,
+    Content NVARCHAR(255),
+    Author NVARCHAR(255),
     Date_Published DATETIME,
     Animal_ID INT,
     FOREIGN KEY (Animal_ID) REFERENCES Animals(ID) ON DELETE SET NULL ON UPDATE CASCADE
